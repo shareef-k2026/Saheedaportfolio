@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Port<span>folio.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="greeting">HELLO, I'M</p>
+                <h1><span>FATHIMATH SAHEEDA.K</span></h1>
+                <h2>I'm a <span>VIDEO EDITOR & VISUAL STORYTELLER</span></h2>
+                <p class="description">
+                    Beyond the Cut. Beyond the Frame. <br>
+
+I bring stories to life through motion, emotion, and creativity. From cinematic edits to engaging visual content, I turn ordinary moments into extraordinary experiences. <br>
+
+Creating visuals that speak louder than words,Every frame has a story. I make it unforgettable. 🎬
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <span>
+                        <img src="https://m-yahya66.github.io/web-custom/img/image.png" alt="">
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <p class="section-label">GET TO KNOW ME</p>
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <div class="about-content">
+                <p>
+                    Hello! I'm FATHIMATH SAHEEDA.K, I'm a creative video editor with a passion for bringing ideas to life through motion, emotion, and storytelling. I love transforming raw footage into visually engaging experiences that capture attention and leave a lasting impression.
+                    For me, video editing is more than just cutting clips — it's about creating a feeling, telling a story, and making every frame meaningful.<br>
+
+                <span class="section-label" style="font-size: 20px;">I believe every frame has a story worth telling. </span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <p class="section-label">WHAT I KNOW</p>
+            <h2 class="section-title">My <span>Skills</span></h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">Adobe Premiere Pro</div>
+                <div class="skill-card">Adobe After Effects</div>
+                <div class="skill-card">DaVinci Resolve</div>
+                <div class="skill-card">CapCut</div>
+                <div class="skill-card">Canva</div>
+                <div class="skill-card">Wondershare Filmora</div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+
+    <div class="project-heading">
+        <span class="section-label">MY CREATIVE WORLD</span>
+        <h2>Selected <span>Projects</span></h2>
+        <p>Every frame tells a story. Explore my creative universe.</p>
+    </div>
+
+    <!-- Project filters -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+        <button class="filter-btn" data-filter="reels">Reels</button>
+        <button class="filter-btn" data-filter="youtube">YouTube</button>
+        <button class="filter-btn" data-filter="creative">Creative</button>
+    </div>
+
+    <!-- 3D Carousel -->
+    <div class="carousel-container">
+        <button class="carousel-arrow prev" id="prevProject"
+            aria-label="Previous project">❮</button>
+
+        <div class="project-carousel" id="projectCarousel">
+
+            <article class="project-card"
+                data-category="creative"
+                data-title="Creative Portfolio Showcase"
+                data-video="assets/project-01.mp4"
+                data-description="An animated portfolio presentation showcasing creative design and visual storytelling."
+                data-software="Filmora">
+
+                <div class="project-media">
+                    <video src="assets/project-01.mp4"
+                        muted playsinline preload="metadata"></video>
+                    <span class="project-number">01 / 04</span>
+                    <span class="play-icon">▶</span>
+                </div>
+
+                <div class="project-info">
+                    <span>CREATIVE DESIGN</span>
+                    <h3>Portfolio Showcase</h3>
+                    <p>Motion • Visual Design</p>
+                    <button class="view-project">Explore Project ↗</button>
+                </div>
+            </article>
+
+            <article class="project-card"
+                data-category="cinematic"
+                data-title="Cinematic Moments"
+                data-description="A cinematic visual story created with beautiful cuts, transitions and color grading."
+                data-software="Filmora">
+
+                <div class="project-media poster poster-two">
+                    <span class="project-number">02 / 04</span>
+                    <span class="poster-text">CINEMATIC<br>STORIES</span>
+                </div>
+
+                <div class="project-info">
+                    <span>CINEMATIC EDITING</span>
+                    <h3>Cinematic Moments</h3>
+                    <p>Color Grading • Storytelling</p>
+                    <button class="view-project">Explore Project ↗</button>
+                </div>
+            </article>
+
+            <article class="project-card"
+                data-category="reels"
+                data-title="Social Media Reels"
+                data-description="Engaging short-form content with creative transitions, rhythm and sound synchronization."
+                data-software="Filmora">
+
+                <div class="project-media poster poster-three">
+                    <span class="project-number">03 / 04</span>
+                    <span class="poster-text">REELS<br>CREATION</span>
+                </div>
+
+                <div class="project-info">
+                    <span>SOCIAL MEDIA</span>
+                    <h3>Creative Reels</h3>
+                    <p>Short-form • Transitions</p>
+                    <button class="view-project">Explore Project ↗</button>
+                </div>
+            </article>
+
+            <article class="project-card"
+                data-category="youtube"
+                data-title="YouTube Video Editing"
+                data-description="An engaging video editing concept with storytelling, audio design and smooth pacing."
+                data-software="Filmora">
+
+                <div class="project-media poster poster-four">
+                    <span class="project-number">04 / 04</span>
+                    <span class="poster-text">VIDEO<br>STORIES</span>
+                </div>
+
+                <div class="project-info">
+                    <span>CONTENT CREATION</span>
+                    <h3>YouTube Stories</h3>
+                    <p>Editing • Sound Design</p>
+                    <button class="view-project">Explore Project ↗</button>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="carousel-arrow next" id="nextProject"
+            aria-label="Next project">❯</button>
+    </div>
+
+    <div class="carousel-footer">
+        <span id="projectCounter">01 / 04</span>
+        <div class="carousel-progress">
+            <div id="progressBar"></div>
+        </div>
+        <span>EXPLORE MY WORK</span>
+    </div>
+
+    <div class="all-projects">
+        <button id="viewAllProjects">VIEW ALL PROJECTS ↗</button>
+    </div>
+
+</section>
+
+<!-- Project details popup -->
+<div class="project-modal" id="projectModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal"
+            aria-label="Close project details">×</button>
+
+        <div id="modalMedia"></div>
+
+        <div class="modal-details">
+            <span>PROJECT DETAILS</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
+        </div>
+    </div>
+</div>
+
+        <section class="section contact" id="contact">
+            <p class="section-label">LET'S CREATE SOMETHING BEAUTIFUL</p>
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <p>Have a story to tell or an idea waiting to come to life?</p>
+            <p>I'm always excited to connect with creative minds, collaborate on new projects, and turn ideas into captivating visual experiences.</p>
+            <p class="section-label">Let's make something unforgettable, one frame at a time.</p>
+            <p>Available for creative collaborations & video editing projects.</p>
+            <a href="mailto:your@email.com" class="btn">Send Me an Email</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 FATHIMATH SAHEEDA.K All Rights Reserved MUHAMMED SHAREEF.K</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
