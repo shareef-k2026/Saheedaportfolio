@@ -1,244 +1,741 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="description" content="Fathimath Saheeda K. — Video Editor and Visual Storyteller Portfolio">
+
+    <title>Fathimath Saheeda K. | Video Editor Portfolio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://m-yahya66.github.io/web-custom/img/image.png">
+
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">Port<span>folio.</span></a>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<!-- HEADER -->
 
-            <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
-        </nav>
-    </header>
+<header class="site-header">
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="greeting">HELLO, I'M</p>
-                <h1><span>FATHIMATH SAHEEDA.K</span></h1>
-                <h2>I'm a <span>VIDEO EDITOR & VISUAL STORYTELLER</span></h2>
-                <p class="description">
-                    Beyond the Cut. Beyond the Frame. <br>
+    <nav class="navbar">
 
-I bring stories to life through motion, emotion, and creativity. From cinematic edits to engaging visual content, I turn ordinary moments into extraordinary experiences. <br>
+        <a href="#home" class="logo">Port<span>folio.</span></a>
 
-Creating visuals that speak louder than words,Every frame has a story. I make it unforgettable. 🎬
-                </p>
+        <ul class="nav-links" id="navLinks">
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-            <div class="hero-image">
-                <div class="profile-circle">
-                    <span>
-                        <img src="https://m-yahya66.github.io/web-custom/img/image.png" alt="">
-                    </span>
-                </div>
-            </div>
-        </section>
+        </ul>
 
-        <section class="section" id="about">
-            <p class="section-label">GET TO KNOW ME</p>
-            <h2 class="section-title">About <span>Me</span></h2>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
 
-            <div class="about-content">
-                <p>
-                    Hello! I'm FATHIMATH SAHEEDA.K, I'm a creative video editor with a passion for bringing ideas to life through motion, emotion, and storytelling. I love transforming raw footage into visually engaging experiences that capture attention and leave a lasting impression.
-                    For me, video editing is more than just cutting clips — it's about creating a feeling, telling a story, and making every frame meaningful.<br>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
 
-                <span class="section-label" style="font-size: 20px;">I believe every frame has a story worth telling. </span>
-                </p>
-            </div>
-        </section>
+    </nav>
 
-        <section class="section" id="skills">
-            <p class="section-label">WHAT I KNOW</p>
-            <h2 class="section-title">My <span>Skills</span></h2>
+</header>
 
-            <div class="skills-grid">
-                <div class="skill-card">Adobe Premiere Pro</div>
-                <div class="skill-card">Adobe After Effects</div>
-                <div class="skill-card">DaVinci Resolve</div>
-                <div class="skill-card">CapCut</div>
-                <div class="skill-card">Canva</div>
-                <div class="skill-card">Wondershare Filmora</div>
-            </div>
-        </section>
 
-        <section class="projects-section" id="projects">
+<main>
 
-    <div class="project-heading">
-        <span class="section-label">MY CREATIVE WORLD</span>
-        <h2>Selected <span>Projects</span></h2>
-        <p>Every frame tells a story. Explore my creative universe.</p>
-    </div>
+<!-- HERO SECTION -->
 
-    <!-- Project filters -->
-    <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All Work</button>
-        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
-        <button class="filter-btn" data-filter="reels">Reels</button>
-        <button class="filter-btn" data-filter="youtube">YouTube</button>
-        <button class="filter-btn" data-filter="creative">Creative</button>
-    </div>
+<section class="hero" id="home">
 
-    <!-- 3D Carousel -->
-    <div class="carousel-container">
-        <button class="carousel-arrow prev" id="prevProject"
-            aria-label="Previous project">❮</button>
+    <div class="hero-content reveal">
 
-        <div class="project-carousel" id="projectCarousel">
+        <p class="greeting">HELLO, I'M</p>
 
-            <article class="project-card"
-                data-category="creative"
-                data-title="Creative Portfolio Showcase"
-                data-video="assets/project-01.mp4"
-                data-description="An animated portfolio presentation showcasing creative design and visual storytelling."
-                data-software="Filmora">
+        <h1><span>FATHIMATH SAHEEDA.K</span></h1>
 
-                <div class="project-media">
-                    <video src="assets/project-01.mp4"
-                        muted playsinline preload="metadata"></video>
-                    <span class="project-number">01 / 04</span>
-                    <span class="play-icon">▶</span>
-                </div>
+        <h2>
+            I'm a
+            <span id="typed" data-words='["VIDEO EDITOR","VISUAL STORYTELLER","MOTION DESIGNER","COLOR GRADER"]'>VIDEO EDITOR</span>
+            <span class="cursor">|</span>
+        </h2>
 
-                <div class="project-info">
-                    <span>CREATIVE DESIGN</span>
-                    <h3>Portfolio Showcase</h3>
-                    <p>Motion • Visual Design</p>
-                    <button class="view-project">Explore Project ↗</button>
-                </div>
-            </article>
+        <p class="description">
 
-            <article class="project-card"
-                data-category="cinematic"
-                data-title="Cinematic Moments"
-                data-description="A cinematic visual story created with beautiful cuts, transitions and color grading."
-                data-software="Filmora">
+            <strong>Beyond the Cut. Beyond the Frame.</strong>
 
-                <div class="project-media poster poster-two">
-                    <span class="project-number">02 / 04</span>
-                    <span class="poster-text">CINEMATIC<br>STORIES</span>
-                </div>
+            <br><br>
 
-                <div class="project-info">
-                    <span>CINEMATIC EDITING</span>
-                    <h3>Cinematic Moments</h3>
-                    <p>Color Grading • Storytelling</p>
-                    <button class="view-project">Explore Project ↗</button>
-                </div>
-            </article>
+            I bring stories to life through motion, emotion, and creativity.
+            From cinematic edits to engaging visual content, I turn ordinary
+            moments into extraordinary experiences.
 
-            <article class="project-card"
-                data-category="reels"
-                data-title="Social Media Reels"
-                data-description="Engaging short-form content with creative transitions, rhythm and sound synchronization."
-                data-software="Filmora">
+            <br><br>
 
-                <div class="project-media poster poster-three">
-                    <span class="project-number">03 / 04</span>
-                    <span class="poster-text">REELS<br>CREATION</span>
-                </div>
+            Creating visuals that speak louder than words.
+            Every frame has a story. I make it unforgettable. 🎬
 
-                <div class="project-info">
-                    <span>SOCIAL MEDIA</span>
-                    <h3>Creative Reels</h3>
-                    <p>Short-form • Transitions</p>
-                    <button class="view-project">Explore Project ↗</button>
-                </div>
-            </article>
+        </p>
 
-            <article class="project-card"
-                data-category="youtube"
-                data-title="YouTube Video Editing"
-                data-description="An engaging video editing concept with storytelling, audio design and smooth pacing."
-                data-software="Filmora">
+        <div class="hero-buttons">
 
-                <div class="project-media poster poster-four">
-                    <span class="project-number">04 / 04</span>
-                    <span class="poster-text">VIDEO<br>STORIES</span>
-                </div>
+            <a href="#projects" class="btn">
+                View My Work
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
 
-                <div class="project-info">
-                    <span>CONTENT CREATION</span>
-                    <h3>YouTube Stories</h3>
-                    <p>Editing • Sound Design</p>
-                    <button class="view-project">Explore Project ↗</button>
-                </div>
-            </article>
+            <a href="#contact" class="btn btn-outline">
+                Contact Me
+            </a>
 
         </div>
 
-        <button class="carousel-arrow next" id="nextProject"
-            aria-label="Next project">❯</button>
     </div>
 
-    <div class="carousel-footer">
-        <span id="projectCounter">01 / 04</span>
-        <div class="carousel-progress">
-            <div id="progressBar"></div>
+
+    <div class="hero-image reveal">
+
+        <div class="profile-circle">
+
+            <img src="https://m-yahya66.github.io/web-custom/img/image.png"
+                 alt="Fathimath Saheeda profile picture">
+
         </div>
-        <span>EXPLORE MY WORK</span>
-    </div>
 
-    <div class="all-projects">
-        <button id="viewAllProjects">VIEW ALL PROJECTS ↗</button>
+        <div class="floating-tag">
+            Creative Video Editor ✦
+        </div>
+
     </div>
 
 </section>
 
-<!-- Project details popup -->
-<div class="project-modal" id="projectModal">
-    <div class="modal-content">
-        <button class="modal-close" id="closeModal"
-            aria-label="Close project details">×</button>
 
-        <div id="modalMedia"></div>
+<!-- ABOUT SECTION -->
 
-        <div class="modal-details">
-            <span>PROJECT DETAILS</span>
-            <h2 id="modalTitle"></h2>
-            <p id="modalDescription"></p>
-            <p><strong>Software:</strong> <span id="modalSoftware"></span></p>
-        </div>
+<section class="section" id="about">
+
+    <p class="section-label">GET TO KNOW ME</p>
+
+    <h2 class="section-title">
+        About <span>Me</span>
+    </h2>
+
+    <div class="about-content reveal">
+
+        <p>
+
+            Hello! I'm FATHIMATH SAHEEDA.K.
+
+            I'm a creative video editor with a passion for bringing ideas
+            to life through motion, emotion, and storytelling.
+
+            I love transforming raw footage into visually engaging
+            experiences that capture attention and leave a lasting impression.
+
+            For me, video editing is more than just cutting clips —
+            it's about creating a feeling, telling a story, and making
+            every frame meaningful.
+
+        </p>
+
+        <p class="about-tagline">
+            I believe every frame has a story worth telling.
+        </p>
+
     </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat reveal">
+            <strong data-count="50" data-suffix="+">0</strong>
+            <span>Projects Edited</span>
+        </div>
+
+        <div class="stat reveal">
+            <strong data-count="6">0</strong>
+            <span>Tools Mastered</span>
+        </div>
+
+        <div class="stat reveal">
+            <strong data-count="3" data-suffix="+">0</strong>
+            <span>Years Creating</span>
+        </div>
+
+        <div class="stat reveal">
+            <strong data-count="100" data-suffix="%">0</strong>
+            <span>Passion</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+
+<section class="section" id="skills">
+
+    <p class="section-label">WHAT I KNOW</p>
+
+    <h2 class="section-title">
+        My <span>Skills</span>
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card reveal">
+            <i class="fas fa-film"></i>
+            <h3>Adobe Premiere Pro</h3>
+            <p>Video editing</p>
+            <div class="bar"><i style="--level:90%"></i></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            <h3>Adobe After Effects</h3>
+            <p>Motion graphics</p>
+            <div class="bar"><i style="--level:80%"></i></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <i class="fas fa-sliders"></i>
+            <h3>DaVinci Resolve</h3>
+            <p>Color grading</p>
+            <div class="bar"><i style="--level:75%"></i></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <i class="fas fa-mobile-screen"></i>
+            <h3>CapCut</h3>
+            <p>Short-form content</p>
+            <div class="bar"><i style="--level:95%"></i></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <i class="fas fa-palette"></i>
+            <h3>Canva</h3>
+            <p>Creative design</p>
+            <div class="bar"><i style="--level:85%"></i></div>
+        </div>
+
+        <div class="skill-card reveal">
+            <i class="fas fa-clapperboard"></i>
+            <h3>Wondershare Filmora</h3>
+            <p>Video production</p>
+            <div class="bar"><i style="--level:80%"></i></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+
+<section class="section" id="services">
+
+    <p class="section-label">WHAT I OFFER</p>
+
+    <h2 class="section-title">
+        My <span>Services</span>
+    </h2>
+
+    <div class="services-grid">
+
+        <div class="service-card reveal">
+            <i class="fas fa-clapperboard"></i>
+            <h3>Video Editing</h3>
+            <p>Clean, story-driven edits for brands, events and creators.</p>
+        </div>
+
+        <div class="service-card reveal">
+            <i class="fas fa-bolt"></i>
+            <h3>Reels & Shorts</h3>
+            <p>Fast, trend-aware vertical content built to hold attention.</p>
+        </div>
+
+        <div class="service-card reveal">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            <h3>Motion Graphics</h3>
+            <p>Titles, lower-thirds and animated elements that add polish.</p>
+        </div>
+
+        <div class="service-card reveal">
+            <i class="fas fa-palette"></i>
+            <h3>Color Grading</h3>
+            <p>Cinematic looks and consistent color across every shot.</p>
+        </div>
+
+    </div>
+
+
+    <h3 class="process-title reveal">How I Work</h3>
+
+    <ol class="process reveal">
+
+        <li><b>01</b><span>Brief</span></li>
+        <li><b>02</b><span>Rough Cut</span></li>
+        <li><b>03</b><span>Refine</span></li>
+        <li><b>04</b><span>Deliver</span></li>
+
+    </ol>
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+
+<section class="section" id="projects">
+
+    <p class="section-label">MY RECENT WORK</p>
+
+    <h2 class="section-title">
+        My <span>Projects</span>
+    </h2>
+
+    <p class="project-description">
+        A collection of my creative work, where every cut, transition,
+        and detail tells a story.
+    </p>
+
+
+    <div class="project-filters">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+
+        <button class="filter-btn" data-filter="reels">Reels</button>
+
+        <button class="filter-btn" data-filter="youtube">YouTube</button>
+
+        <button class="filter-btn" data-filter="creative">Creative</button>
+
+    </div>
+
+
+    <div class="carousel-controls">
+
+        <button class="carousel-btn" id="prevProject" aria-label="Previous project">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button class="carousel-btn" id="nextProject" aria-label="Next project">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+    <div class="projects-viewport">
+
+        <div class="projects-grid" id="projectTrack">
+
+
+            <article class="project-card"
+                data-category="cinematic"
+                data-title="Cinematic Edits"
+                data-description="Cinematic edits created with creative transitions, visual storytelling and color grading."
+                data-video="assets/project-01.mp4">
+
+                <div class="project-icon">01</div>
+
+                <span class="project-type">CINEMATIC</span>
+
+                <h3>Cinematic Edits</h3>
+
+                <p>Creating cinematic experiences through beautiful visuals and storytelling.</p>
+
+                <button class="project-link view-project">
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </article>
+
+
+            <article class="project-card"
+                data-category="reels"
+                data-title="Instagram Reels"
+                data-description="Creative short-form videos with engaging transitions, music synchronization and visual effects."
+                data-video="">
+
+                <div class="project-icon">02</div>
+
+                <span class="project-type">SHORT FORM</span>
+
+                <h3>Instagram Reels</h3>
+
+                <p>From cinematic visuals to engaging short-form content.</p>
+
+                <button class="project-link view-project">
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </article>
+
+
+            <article class="project-card"
+                data-category="youtube"
+                data-title="YouTube Videos"
+                data-description="Video editing focused on storytelling, smooth transitions, sound design and audience engagement."
+                data-video="">
+
+                <div class="project-icon">03</div>
+
+                <span class="project-type">YOUTUBE</span>
+
+                <h3>YouTube Videos</h3>
+
+                <p>Transforming raw footage into engaging YouTube content.</p>
+
+                <button class="project-link view-project">
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </article>
+
+
+            <article class="project-card"
+                data-category="creative"
+                data-title="Creative Montages"
+                data-description="Creative montages combining music, rhythm, transitions and visual composition."
+                data-video="">
+
+                <div class="project-icon">04</div>
+
+                <span class="project-type">CREATIVE</span>
+
+                <h3>Creative Montages</h3>
+
+                <p>Combining creativity, music, motion and imagination.</p>
+
+                <button class="project-link view-project">
+                    View Project
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </button>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+    <p class="carousel-hint">
+        Explore my projects using the arrows or swipe on mobile.
+    </p>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <div class="contact-heading reveal">
+
+            <p class="contact-eyebrow">LET'S CONNECT</p>
+
+            <h2>Contact <span>Me</span></h2>
+
+            <span class="heading-line"></span>
+
+            <p class="contact-intro">
+                Have a story to tell or an idea waiting to come to life?
+                Let's create something beautiful together.
+            </p>
+
+        </div>
+
+
+        <div class="contact-content">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+
+                <div class="contact-item reveal">
+
+                    <i class="fas fa-user"></i>
+
+                    <div>
+                        <small>NAME</small>
+                        <strong>Fathimath Saheeda</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item reveal">
+
+                    <i class="fas fa-briefcase"></i>
+
+                    <div>
+                        <small>PROFESSION</small>
+                        <strong>Graphic Designer & Video Editor</strong>
+                    </div>
+
+                </div>
+
+
+                <a href="mailto:faathisaee961@gmail.com"
+                   class="contact-item reveal">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+                        <small>EMAIL ME</small>
+                        <strong>faathisaee961@gmail.com</strong>
+                    </div>
+
+                </a>
+
+
+                <a href="tel:+919633505961"
+                   class="contact-item reveal">
+
+                    <i class="fas fa-phone"></i>
+
+                    <div>
+                        <small>CALL ME</small>
+                        <strong>+91 96335 05961</strong>
+                    </div>
+
+                </a>
+
+
+                <div class="contact-item reveal">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <div>
+                        <small>LOCATION</small>
+                        <strong>Edachakai, Kasaragod, Kerala, India</strong>
+                    </div>
+
+                </div>
+
+
+                <a class="whatsapp-btn"
+                   href="https://wa.me/919633505961"
+                   target="_blank"
+                   rel="noopener">
+
+                    <i class="fab fa-whatsapp"></i>
+                    Chat on WhatsApp
+
+                </a>
+
+
+                <div class="social-links">
+
+                    <a href="https://x.com/"
+                       aria-label="X"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/"
+                       aria-label="Facebook"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/"
+                       aria-label="LinkedIn"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                       aria-label="Instagram"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/"
+                       aria-label="YouTube"
+                       target="_blank"
+                       rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        name="from_name"
+                        placeholder="Your Name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        name="reply_to"
+                        placeholder="Your Email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Number"
+                        autocomplete="tel"
+                    >
+
+                </div>
+
+
+                <textarea
+                    name="message"
+                    placeholder="Your Message..."
+                    rows="6"
+                    required
+                ></textarea>
+
+
+                <button type="submit" class="btn" id="sendBtn">
+
+                    <span>Send Message</span>
+                    
+                    <i class="fas fa-paper-plane"></i>
+
+                </button>
+
+
+                <p id="formStatus"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 FATHIMATH SAHEEDA.K. All Rights Reserved.</p>
+
+    <a href="#home">Back to top ↑</a>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+
+<!-- PROJECT PREVIEW MODAL -->
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalTitle">
+
+        <button class="modal-close" id="closeModal" aria-label="Close popup">
+            ×
+        </button>
+
+        <p class="section-label">PROJECT PREVIEW</p>
+
+        <h2 id="modalTitle">Project Title</h2>
+
+        <p id="modalDescription"></p>
+
+        <video id="modalVideo" controls playsinline hidden></video>
+
+        <p id="modalMessage">
+            Add your project video to preview it here.
+        </p>
+
+    </div>
+
 </div>
 
-        <section class="section contact" id="contact">
-            <p class="section-label">LET'S CREATE SOMETHING BEAUTIFUL</p>
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <p>Have a story to tell or an idea waiting to come to life?</p>
-            <p>I'm always excited to connect with creative minds, collaborate on new projects, and turn ideas into captivating visual experiences.</p>
-            <p class="section-label">Let's make something unforgettable, one frame at a time.</p>
-            <p>Available for creative collaborations & video editing projects.</p>
-            <a href="mailto:your@email.com" class="btn">Send Me an Email</a>
-        </section>
-    </main>
 
-    <footer>
-        <p>© 2026 FATHIMATH SAHEEDA.K All Rights Reserved MUHAMMED SHAREEF.K</p>
-    </footer>
+<!-- EMAILJS SDK -->
 
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- YOUR JAVASCRIPT -->
+
+<script src="script.js"></script>
+
 </body>
 </html>
